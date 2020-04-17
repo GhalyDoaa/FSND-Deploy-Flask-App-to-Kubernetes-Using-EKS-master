@@ -4,9 +4,6 @@ A simple app to create a JWT token.
 
 export TOKEN=`curl -d '{"email":"domerafo@hotmail.com","password":"PASSWORD"}' -H "Content-Type: application/json" -X POST localhost:8080/auth  | jq -r '.token'`
 
-
-
-
 ===========
 ++Port here according to port that container use
 curl --request GET 'http://127.0.0.1:90/contents' -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODgyNzExMzcsIm5iZiI6MTU4NzA2MTUzNywiZW1haWwiOiJkb21lcmFmb0Bob3RtYWlsLmNvbSJ9.fnCqzkrtrQN1c9C9Y-rxVCRd7kjIiHUZlFVebdTBDbI" | jq .
