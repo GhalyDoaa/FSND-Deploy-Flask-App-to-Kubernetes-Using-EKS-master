@@ -35,6 +35,8 @@ phases:
       - ls
 artifacts:
   files: build.json
+  discard-paths: yes
+
 
 env:
   parameter-store:         
